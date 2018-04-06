@@ -1,4 +1,4 @@
-craeting a util function for handling ajax calls.
+creating a utility function for handling ajax calls.
 the function recieves json data in this format 
                      {
                         method: "GET",
