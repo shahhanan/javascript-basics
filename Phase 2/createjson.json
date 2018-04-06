@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Sam",
+    "Location": "California",
+    "favFoods": ["Chicken", "Fish", "<strong>Lamb</strong>"],
+    "about": "HI there my name is Sam "
+  },
+  {
+    "name": "jhon",
+    "Location": "Texas",
+    "favFoods": ["Tuna", "Dosa", "<strong>French Fries</strong>"],
+    "about": "HI there my name is Jhon"
+  },
+  {
+    "name": "Harold",
+    "Location": "New York",
+    "favFoods": ["<strong>Coffee</strong>", "Avocado", "Carrot"],
+    "about": "HI there my name is Harold"
+  }
+]
