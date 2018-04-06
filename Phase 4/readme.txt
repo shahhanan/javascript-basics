@@ -13,4 +13,5 @@ the function recieves json data in this format
                                   }
                       }
                       
-and genetartes the responce according to the http state of the ajax call
+and genetartes the responce if the ajax call is success else returns a custom message about the error.
+the responce generated is a json array of objects.
