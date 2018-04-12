@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+    <button id="getbtn" class="getbttn" onclick=" populateData('getbtn', 'getbtn1') " > GET Data </button>
+    <button id="getbtn1" class="getbttn" onclick=" showform('getbtn', 'getbtn1', 'formOne') " > POST Data </button>
+    <div id="formOne" class="container2">
+        <form id ="postform" name="postform"  method = "post" enctype="multipart/form-data">
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">NAME</label>
+                    <input type="text"  class="form-control" id="name" name="name" >
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Contact First Name</label>
+                    <input type="text" class="form-control" id="cfname" name="cfname" >
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Contact Last Name</label>
+                    <input type="text" class="form-control" id="clname" name="clname" >
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Phone Number</label>
+                    <input type="text" class="form-control" id="number" name="number" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'').replace(/(\..*)\./g,'$1')"  >
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Address Line 1</label>
+                    <input type="text" class="form-control" id="addressl1" name="addressl1" >
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Address Line 2</label>
+                    <input type="text" class="form-control" id="addressl2" name="addressl2" >
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">City</label>
+                    <input type="text" class="form-control" id="city" name="city" >
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">State</label>
+                    <input type="text" class="form-control" id="state" name="state" >
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Postal Code</label>
+                    <input type="text" class="form-control" id="postalcode" name="postalcode" maxlength="6" oninput="this.value=this.value.replace(/[^0-9]/g,'').replace(/(\..*)\./g,'$1')"  >
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Country</label>
+                    <input type="text" class="form-control" id="country" name="country" >
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Sales Representative Number</label>
+                    <input type="text" class="form-control" id="salesrepnumber" name="salesrepnumber" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'').replace(/(\..*)\./g,'$1')" >
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Credit Limit</label>
+                    <input type="text" class="form-control" id="creditlimit" name="creditlimit" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'').replace(/(\..*)\./g,'$1')" >
+            </div>
+            &nbsp; &nbsp;  <input type="button" id="submitbtn"  value="submit" class="btn btn-primary" onclick="prepareDataToPost(postform)"> <br/>
+        </form>
+    </div>    
+</body>
+<script src="js/ajaxutility.js"></script>
+<script src="js/populate.js"></script>
+</html>
